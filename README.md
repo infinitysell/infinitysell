@@ -5,8 +5,9 @@
   ASCII portrait and info card the same height -- re-match them if you change the
   info card's H in scripts/make_info_card.py.
 
-  Regenerate the art:  python scripts/make_ascii_svg.py source-prepped.png avi-ascii.svg
-                       python scripts/make_info_card.py
+  Regenerate the art:  python scripts/make_brand_svg.py     # infinity logo card
+                       python scripts/make_info_card.py     # neofetch info panel
+  (An ASCII-portrait card is also available via scripts/make_ascii_svg.py.)
   The contribution graph refreshes itself daily (.github/workflows/update-profile-art.yml).
   Project/template docs live in TEMPLATE.md.
 -->
@@ -14,14 +15,14 @@
 
 <table>
 <tr>
-<td valign="top"><img src="./avi-ascii.svg" width="370" alt="ASCII portrait of Shahmir Gill" /></td>
+<td valign="top"><img src="./brand-card.svg" width="370" alt="InfinitySell logo" /></td>
 <td valign="top"><img src="./info-card.svg" width="490" alt="Experience, stack, highlights" /></td>
 </tr>
 </table>
 
 ## Shahmir Gill
 
-**AI Automation &amp; CRM Lead · Founder @ InfinitySell · n8n Systems Builder**
+**Founder @ [InfinitySell.io](https://infinitysell.io) · AI Automation &amp; CRM Lead · n8n Systems Builder**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-infinitysell.io-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://infinitysell.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shahmir--gill-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shahmir-gill/)
