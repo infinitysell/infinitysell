@@ -85,7 +85,7 @@ parts = [
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
 parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
-             f'text-anchor="middle">shahmir@github: ~$ ./brand.sh</text>')
+             f'text-anchor="middle">infinitysell@github: ~$ ./brand.sh</text>')
 
 # soft glow behind the mark
 cx, cy = CANVAS_W / 2, TITLEBAR_H + 320
@@ -116,11 +116,11 @@ status_y = status_line_y + 20
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
 parts.append(
     f'<text x="{PAD}" y="{status_y:.1f}" font-size="13">'
-    f'<tspan fill="{TITLE_TEXT}">shahmir@github:~$ whoami </tspan>'
+    f'<tspan fill="{TITLE_TEXT}">infinitysell@github:~$ whoami </tspan>'
     f'<tspan fill="{INK}">Shahmir Gill</tspan>'
     f'<tspan fill="{TITLE_TEXT}"> — Founder, </tspan>'
     f'<tspan fill="{ACCENT}">InfinitySell.io</tspan></text>')
-parts.append(f'<rect x="{PAD+505}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+parts.append(f'<rect x="{PAD+544}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 

@@ -1,7 +1,7 @@
 """
-Convert a portrait photo into a CLEAN, monochrome ASCII-art SVG (Andrew6rant
-style: one light-gray color, subject isolated on a dark background) that "types"
-itself in like a terminal, then holds.
+Convert a portrait photo into a CLEAN, monochrome ASCII-art SVG (one light-gray
+color, subject isolated on a dark background) that "types" itself in like a
+terminal, then holds.
 
 Monochrome is deliberate -- per-character rainbow color is what makes ASCII
 portraits look noisy. One fill color + a good density ramp + high contrast (so a
@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # defaults to the prepped grayscale image (see prep_photo.py), which already has
 # the background removed + local contrast applied.
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "source-prepped.png")
-OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "avi-ascii.svg")
+OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "ascii-portrait.svg")
 
 COLS = 100
 ROWS = 53
@@ -49,7 +49,7 @@ BG = "#0d1117"
 BG2 = "#111722"
 FRAME = "#30363d"
 TITLE_TEXT = "#7d8590"
-INK = "#c9d1d9"      # the single ascii color (matches Andrew6rant)
+INK = "#c9d1d9"      # the single ascii color
 CURSOR = "#c9d1d9"
 
 # ---- reveal timing (one-shot; a cursor rasters top -> bottom) -------------
@@ -103,7 +103,7 @@ parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" 
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
 parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
-             f'text-anchor="middle">shahmir@github: ~$ ./portrait.sh</text>')
+             f'text-anchor="middle">infinitysell@github: ~$ ./portrait.sh</text>')
 
 # one <text> per row (single color -> no per-char markup, tiny file)
 font_size = CELL_H * 0.86
@@ -138,8 +138,8 @@ status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
 status_y = status_line_y + 19
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
 parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
-             f'shahmir@github:~$ whoami <tspan fill="{INK}">Shahmir Gill</tspan></text>')
-parts.append(f'<rect x="{PAD+213}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+             f'infinitysell@github:~$ whoami <tspan fill="{INK}">Shahmir Gill</tspan></text>')
+parts.append(f'<rect x="{PAD+252}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 

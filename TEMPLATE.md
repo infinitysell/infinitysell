@@ -51,8 +51,8 @@ pip install -r scripts/requirements.txt      # scraper
 
 # 1. portrait  (STATIC=1 shows the final frame; drop it for the animated file)
 python scripts/prep_photo.py path/to/your-photo.jpg source-prepped.png
-python scripts/make_ascii_svg.py              # -> avi-ascii.svg
-qlmanage -t -s 900 -o . avi-ascii.svg         # preview (macOS)
+python scripts/make_ascii_svg.py              # -> ascii-portrait.svg
+qlmanage -t -s 900 -o . ascii-portrait.svg         # preview (macOS)
 
 # 2. info panel  (edit the ROWS + HOST at the top of the script first)
 python scripts/make_info_card.py              # -> info-card.svg
@@ -66,7 +66,7 @@ cp profile-README-template.md README.md       # then fill in name / tagline / li
 ```
 
 Create a **public repo named exactly your GitHub username**, drop in
-`avi-ascii.svg`, `info-card.svg`, `contrib-heatmap.svg`, `README.md`, the
+`ascii-portrait.svg`, `info-card.svg`, `contrib-heatmap.svg`, `README.md`, the
 `scripts/` folder, `data/contributions.json`, and `.github/`, then push.
 
 Finally: **Settings → Actions → General → Workflow permissions → Read and write**,
@@ -82,4 +82,4 @@ After that it updates itself daily.
 | Change experience / stack   | `ROWS` and `HOST` in `make_info_card.py` |
 | Info panel too tall         | bump `H` in `make_info_card.py`, then re-match `width=` in the README |
 
-Have fun — tag me if you ship one.
+Have fun with it.

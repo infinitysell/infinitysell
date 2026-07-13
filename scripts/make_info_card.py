@@ -1,6 +1,6 @@
 """
-Build a neofetch-style info card SVG (Andrew6rant style) to sit to the RIGHT of
-the ASCII portrait: colored key/value rows for work experience, tech stack, and
+Build a neofetch-style info card SVG to sit to the RIGHT of the left-hand card:
+colored key/value rows for work experience, tech stack, and
 highlights -- NOT GitHub stats (the contribution graph covers those).
 
 Static content, hand-authored below. Lines fade/slide in on a short stagger so
@@ -43,13 +43,12 @@ ACCENT = "#22d3ee"
 #    ("bul", text)          -> green dot + light bullet
 #    ("gap",)               -> a little vertical space
 # ===========================================================================
-HOST = "shahmir"   # shown as  shahmir@github  in the header
+HOST = "infinitysell"   # shown as  infinitysell@github  in the header
 
 ROWS = [
     ("host",),
     ("kv", "Now", "AI Automation & CRM Lead @ InvestMenter"),
     ("kv", "Founder", "InfinitySell - automation infra"),
-    ("kv", "Prev", "Automation Consultant, Infinity SW"),
     ("kv", "Edu", "B.S. Computer Science '23; M.S. Cyber (WIP)"),
     ("gap",),
     ("sec", "Stack"),
