@@ -43,24 +43,25 @@ ACCENT = "#22d3ee"
 #    ("bul", text)          -> green dot + light bullet
 #    ("gap",)               -> a little vertical space
 # ===========================================================================
-HOST = "you"   # shown as  you@github  in the header
+HOST = "shahmir"   # shown as  shahmir@github  in the header
 
 ROWS = [
     ("host",),
-    ("kv", "Now", "Your current role @ Company"),
-    ("kv", "Prev", "Previous role @ Company"),
-    ("kv", "Also", "Another hat you wear"),
-    ("kv", "Edu", "Your degree, School 'YY"),
+    ("kv", "Now", "AI Automation & CRM Lead @ InvestMenter"),
+    ("kv", "Founder", "InfinitySell - automation infra"),
+    ("kv", "Prev", "Automation Consultant, Infinity SW"),
+    ("kv", "Edu", "B.S. Computer Science '23; M.S. Cyber (WIP)"),
     ("gap",),
     ("sec", "Stack"),
-    ("kv", "Frontend", "React, Next.js, TypeScript"),
-    ("kv", "Backend", "Node, Postgres, GraphQL"),
-    ("kv", "AI / ML", "LangChain, OpenAI, ..."),
-    ("kv", "Cloud", "AWS, Docker, Vercel"),
+    ("kv", "Automate", "n8n (self-hosted), Zapier, Make, Webhooks"),
+    ("kv", "CRM/Comms", "Close, GoHighLevel, Twilio, RingCentral"),
+    ("kv", "AI / Voice", "Claude, Vapi, Whisper, ElevenLabs"),
+    ("kv", "Infra", "PostgreSQL, Redis, Docker, Traefik"),
     ("gap",),
     ("sec", "Highlights"),
-    ("bul", "A thing you're proud of"),
-    ("bul", "Another highlight worth bragging about"),
+    ("bul", "700+ prod workflows; 80% -> 0.034% failure rate"),
+    ("bul", "Automated ~50K leads in 3 months (~5 FTE saved)"),
+    ("bul", "Leads a 33,700-member automation community"),
 ]
 
 
