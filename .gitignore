@@ -1,0 +1,9 @@
+# Local image-prep inputs/outputs (regenerated from your photo; not committed)
+source-photo.*
+source-prepped.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
