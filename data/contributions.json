@@ -1,17 +1,17 @@
 {
   "username": "infinitysell",
-  "generated_at": "2026-09-05T08:22:19Z",
+  "generated_at": "2026-09-06T08:41:09Z",
   "range": {
-    "start": "2025-08-31",
-    "end": "2026-09-05"
+    "start": "2025-09-07",
+    "end": "2026-09-06"
   },
-  "total_contributions": 103,
-  "active_days": 21,
-  "avg_per_active_day": 4.9,
+  "total_contributions": 98,
+  "active_days": 19,
+  "avg_per_active_day": 5.2,
   "current_streak": {
-    "length": 3,
-    "start": "2026-09-02",
-    "end": "2026-09-04"
+    "length": 0,
+    "start": null,
+    "end": null
   },
   "longest_streak": {
     "length": 3,
@@ -24,12 +24,8 @@
   },
   "monthly": [
     {
-      "month": "2025-08",
-      "total": 0
-    },
-    {
       "month": "2025-09",
-      "total": 5
+      "total": 0
     },
     {
       "month": "2025-10",
@@ -81,34 +77,6 @@
     }
   ],
   "days": [
-    {
-      "date": "2025-08-31",
-      "count": 0
-    },
-    {
-      "date": "2025-09-01",
-      "count": 0
-    },
-    {
-      "date": "2025-09-02",
-      "count": 0
-    },
-    {
-      "date": "2025-09-03",
-      "count": 3
-    },
-    {
-      "date": "2025-09-04",
-      "count": 2
-    },
-    {
-      "date": "2025-09-05",
-      "count": 0
-    },
-    {
-      "date": "2025-09-06",
-      "count": 0
-    },
     {
       "date": "2025-09-07",
       "count": 0
@@ -1563,6 +1531,10 @@
     },
     {
       "date": "2026-09-05",
+      "count": 0
+    },
+    {
+      "date": "2026-09-06",
       "count": 0
     }
   ]
